@@ -1,0 +1,24 @@
+ALGORITHM Sentence
+VAR
+    num_vow,num_words,num_charchter:INTEGER;
+    s:STRING;
+    len:INTEGER;
+    i:INTEGER;
+BEGIN
+    write("write your sentence")
+    //oceans apart day after day.
+    read("s")
+    len:=length("s")
+    FOR =0 FROM 0 TO len STEP 1 DO
+    IF (s[i]='') THEN
+    num_words:=num_words+1;
+    END_IF
+    IF (s[i]=('a' OR 'i' OR 'o' OR 'e' OR 'u' OR 'y') THEN
+    num_vow:=num_vow+1;
+    END_IF
+END_FOR
+num_charchter:=len-num_words
+write('number of vowls', num_vow)
+write('number of characters', num_charchter)
+write('number of words', num_words+1)
+END
